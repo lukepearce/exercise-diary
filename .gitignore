@@ -1,0 +1,16 @@
+.DS_Store
+*.log
+
+.env.php
+
+_cache/
+app/composer.phar
+app/composer.lock
+app/vendor/
+
+public_html/assets/
+public_html/uploads/**/**
+
+node_modules/
+
+todo.txt

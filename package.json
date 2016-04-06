@@ -1,0 +1,28 @@
+{
+	"name": "ten4-framework",
+	"version": "1.0.0",
+	"private": true,
+	"author": "Ten4 Design",
+	"scripts": {
+		"gulp": "gulp",
+		"gulp-full": "gulp full",
+		"gulp-todo": "gulp todo"
+	},
+	"dependencies": {
+		"jshint": "*",
+		"gulp": "*",
+		"gulp-if": "*",
+		"gulp-livereload": "*",
+		"gulp-header": "*",
+		"gulp-autoprefixer": "*",
+		"gulp-cssnano": "*",
+		"gulp-sass": "*",
+		"gulp-csslint": "*",
+		"gulp-imagemin": "*",
+		"gulp-svgmin": "*",
+		"gulp-jshint": "*",
+		"gulp-concat": "*",
+		"gulp-uglify": "*",
+		"gulp-watch": "*"
+	}
+}
