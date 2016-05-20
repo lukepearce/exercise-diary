@@ -50,6 +50,12 @@ $app->get('/', function ($request, $response) {
 		'foo' => 'bar'
 	]);
 });
+
+$app->get('/about', function ($request, $response) {
+	return $this->view->render($response, 'about.twig', [
+		'foo' => 'bar'
+	]);
+});
 //->add($mw->blockRobots()); // Block robots on this route only.
 //->add($mw->requireAuth()); // Require authentication on this route only.
 

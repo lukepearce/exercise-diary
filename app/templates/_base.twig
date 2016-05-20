@@ -4,6 +4,9 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,user-scalable=0,initial-scale=1,minimum-scale=1,maximum-scale=1">
 
+	<link href='https://fonts.googleapis.com/css?family=Pontano+Sans' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+
 	<link rel="shortcut icon" href="{{ assetsUrl }}img/favicon.ico">
 	<link rel="apple-touch-icon-precomposed" href="{{ assetsUrl }}img/apple-touch-icon-precomposed.png">
 
@@ -47,26 +50,28 @@
 
 <body>
 
-<div class="cookie-notice">This website places cookies on your computer to improve your experience. By continuing to browse the site, you are agreeing to our use of cookies. For more details, see our <a href="{{ siteUrl }}legal/cookies">cookie policy</a>.</div>
+<div class="container">
+	<div class="cookie-notice">This website places cookies on your computer to improve your experience. By continuing to browse the site, you are agreeing to our use of cookies. For more details, see our <a href="{{ siteUrl }}legal/cookies">cookie policy</a>.</div>
 
-<div role="navigation">
-	<ul class="">
-		{% set site_area = segments[1] %}
-		{% set navigation = {
-			'home': 'Latest',
-			'news': 'News',
-			'photos': 'Photos',
-			'blog': 'Blog',
-			'about': 'About'
-		} %}
-		{% for slug, label in navigation %}
-			<li{{ ( site_area == slug ) or ( site_area == '' and slug == 'home' ) ? ' class="selected"' }}><a href="{{ siteUrl ~ ( slug == 'home' ? '' : slug ) }}">{{ label }}</a></li>
-		{% endfor %}
-	</ul>
-</div>
+	<div class="nav" role="navigation">
+		<ul class="list--inline list--spaced">
+			{% set site_area = segments[1] %}
+			{% set navigation = {
+				'home': 'Latest',
+				'news': 'News',
+				'photos': 'Photos',
+				'blog': 'Blog',
+				'about': 'About'
+			} %}
+			{% for slug, label in navigation %}
+				<li class="list__item{{ ( site_area == slug ) or ( site_area == '' and slug == 'home' ) ? ' selected' }}"><a href="{{ siteUrl ~ ( slug == 'home' ? '' : slug ) }}">{{ label }}</a></li>
+			{% endfor %}
+		</ul>
+	</div>
 
-<div role="main">
-	{% block content %}{% endblock %}
+	<div role="main">
+		{% block content %}{% endblock %}
+	</div>
 </div>
 
 <script src="{{ assetsUrl }}js/libs.js"></script>

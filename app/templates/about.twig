@@ -1,0 +1,18 @@
+{% extends '_base.twig' %}
+
+{% set page_title = 'Home' %}
+
+{# Override meta description and image like this: #}
+{% set page_description = 'Page description' %}
+{% set page_image = 'http://www.images.com/image.jpg' %}
+
+{% block content %}
+	<h1 class="alpha h">About</h1>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam enim iusto, nemo delectus assumenda minima ex beatae cum dolorum neque alias odit tempora rerum ea, dolores, expedita provident fugit veritatis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus aperiam excepturi quisquam numquam dolore aut vitae laudantium, laboriosam voluptates repellat. Expedita laborum debitis dolores aliquam quis in, quia temporibus! Voluptates.</p>
+{% endblock %}
+
+{% block script %}
+	<script>
+		console.log( 'hi' );
+	</script>
+{% endblock %}

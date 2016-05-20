@@ -1,0 +1,14 @@
+.list--inline {
+	.list__item {
+		display: inline-block;
+	}
+}
+
+.list--spaced {
+	.list__item {
+		margin-right: 1em;
+			&:last-child {
+				margin-right: 0;
+			}
+	}
+}

@@ -12,14 +12,3 @@ body {
 	line-height: 1.4;
 }
 
-p {
-	background-color: #fbb;
-	border: 1px solid red;
-	@include media( 500px ) {
-		border: 1px solid blue;
-	}
-	@include hi-dpi() {
-		color: blue;
-	}
-}
-

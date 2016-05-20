@@ -3,7 +3,7 @@
 	$alternate-box-model: false;
 
 // Typography
-	$unit: 18px;
+	$unit: 26px;
 
 // Dimensions
 	$container-max-width: 1440px;
@@ -11,8 +11,8 @@
 
 // Fonts
 	// These are used in fonts.scss for the @font-face rules, so they mustn't be font stacks.
-	$font-primary: 'Courier New';
-	$font-secondary: 'Times New Roman';
+	$font-primary: 'Pontano Sans';
+	$font-secondary: 'Oswald';
 	$font-icons: 'Site-Icons';
 
 	// 'font_filename' 'Font Name' font-weight font-style
@@ -28,8 +28,8 @@
 
 // Colours
 	// Try not to give colours a colourful name - they could change in the future.
-	$colour-primary: #d94c3e;
-	$colour-link: #333;
+	$colour-primary: #434343;
+	$colour-link: rgb(0, 89, 140);
 	$colour-link--hover: lighten( $colour-link, 30% );
 
 // Grid
